@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
   name_holder.each do |name|
     pigeon_list[name] = {}
   end
-  
+
   data.each do |cat, subcat|
     pigeon_list.each do |name, hash|
     pigeon_list[name][cat] = []
