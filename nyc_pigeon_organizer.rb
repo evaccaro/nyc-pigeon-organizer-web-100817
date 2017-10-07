@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
     pigeon_list[name][cat] = []
     subcat.each do |type, pigeons|
       if pigeons.include?(name)
-        pigeon_list[name][cat].push(type)
+        pigeon_list[name][cat].push(type.to_s)
       end
     end
   end
